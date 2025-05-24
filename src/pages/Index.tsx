@@ -7,24 +7,28 @@ const Index = () => {
       icon: "Send",
       url: "https://t.me/",
       color: "hover:bg-blue-500",
+      iconColor: "text-blue-500",
     },
     {
       name: "ВКонтакте",
       icon: "Users",
       url: "https://vk.com/",
       color: "hover:bg-blue-600",
+      iconColor: "text-blue-600",
     },
     {
       name: "YouTube",
       icon: "Play",
       url: "https://youtube.com/",
       color: "hover:bg-red-500",
+      iconColor: "text-red-500",
     },
     {
       name: "Одноклассники",
       icon: "MessageCircle",
       url: "https://ok.ru/",
       color: "hover:bg-orange-500",
+      iconColor: "text-orange-500",
     },
   ];
 
@@ -47,7 +51,11 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className={`flex items-center justify-center gap-2 p-3 bg-white rounded-lg shadow-sm border transition-all duration-200 hover:shadow-md hover:text-white ${social.color}`}
               >
-                <Icon name={social.icon} size={20} />
+                <Icon
+                  name={social.icon}
+                  size={20}
+                  className={social.iconColor}
+                />
                 <span className="font-medium text-sm">{social.name}</span>
               </a>
             ))}
