@@ -38,9 +38,6 @@ const Index = () => {
 
         {/* Социальные сети */}
         <div className="space-y-3">
-          <h2 className="text-lg font-semibold text-gray-700 mb-4">
-            Найдите нас в социальных сетях
-          </h2>
           <div className="grid grid-cols-2 gap-3">
             {socialLinks.map((social) => (
               <a
